@@ -1,19 +1,11 @@
 package jfun;
 import java.util.*;
 public class Question33 {
-
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int arr[]= new int[n];
-		int arr2[] = new int[n];
-		for(int i=0;i<n;i++) {
-			arr[i]=sc.nextInt();
-		}
-		for(int i=0;i<n;i++) {
-			arr2[i]=sc.nextInt();
-		}
-
+	public static int [] middleWay(int  [] a ,int  [] b) {
+		return new int[] {a[1],b[1]};
 	}
-
+	public static void main(String[] args) {
+		int[] result1 = middleWay(new int[] {1,2,3}, new int[] {4,5,6} );
+		System.out.println(Arrays.toString(result1));
+ }
 }
